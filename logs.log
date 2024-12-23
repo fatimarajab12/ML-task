@@ -6882,3 +6882,154 @@ Styler.applymap has been deprecated. Use Styler.map instead.
 2024-12-23 00:13:05,348:INFO:_display_container: 7
 2024-12-23 00:13:05,348:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=42)
 2024-12-23 00:13:05,348:INFO:compare_models() successfully completed......................................
+2024-12-23 19:46:49,102:INFO:Initializing compare_models()
+2024-12-23 19:46:49,111:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, include=None, fold=None, round=4, cross_validation=True, sort=['R2', 'RMSE', 'MAE', 'MSE'], n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': ['R2', 'RMSE', 'MAE', 'MSE'], 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-12-23 19:46:49,112:INFO:Checking exceptions
+2024-12-23 19:50:14,611:INFO:Initializing save_model()
+2024-12-23 19:50:14,611:INFO:save_model(model=ExtraTreesRegressor(n_jobs=-1, random_state=42), model_name=best_model_1734976214.pkl, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\ahmad\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Dur', 'Gender'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-12-23 19:50:14,611:INFO:Adding model into prep_pipe
+2024-12-23 19:50:15,221:INFO:best_model_1734976214.pkl.pkl saved in current working directory
+2024-12-23 19:50:15,233:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Dur', 'Gender'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=42))])
+2024-12-23 19:50:15,233:INFO:save_model() successfully completed......................................
+2024-12-23 19:50:21,341:INFO:Initializing save_model()
+2024-12-23 19:50:21,341:INFO:save_model(model=ExtraTreesRegressor(n_jobs=-1, random_state=42), model_name=best_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\ahmad\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Dur', 'Gender'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-12-23 19:50:21,341:INFO:Adding model into prep_pipe
+2024-12-23 19:50:21,520:INFO:best_model.pkl saved in current working directory
+2024-12-23 19:50:21,529:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Dur', 'Gender'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=42))])
+2024-12-23 19:50:21,530:INFO:save_model() successfully completed......................................
+2024-12-23 19:51:43,876:INFO:Initializing plot_model()
+2024-12-23 19:51:43,877:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=42), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, system=True)
+2024-12-23 19:51:43,877:INFO:Checking exceptions
+2024-12-23 19:51:43,952:INFO:Preloading libraries
+2024-12-23 19:51:44,408:INFO:Copying training dataset
+2024-12-23 19:51:44,408:INFO:Plot type: feature
+2024-12-23 19:51:44,409:WARNING:No coef_ found. Trying feature_importances_
+2024-12-23 19:51:44,994:INFO:Visual Rendered Successfully
+2024-12-23 19:51:45,206:INFO:plot_model() successfully completed......................................
+2024-12-23 19:53:24,085:INFO:Initializing plot_model()
+2024-12-23 19:53:24,085:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=42), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, system=True)
+2024-12-23 19:53:24,086:INFO:Checking exceptions
+2024-12-23 19:53:24,156:INFO:Preloading libraries
+2024-12-23 19:53:24,249:INFO:Copying training dataset
+2024-12-23 19:53:24,250:INFO:Plot type: feature
+2024-12-23 19:53:24,250:WARNING:No coef_ found. Trying feature_importances_
+2024-12-23 19:53:24,854:INFO:Visual Rendered Successfully
+2024-12-23 19:53:25,087:INFO:plot_model() successfully completed......................................
+2024-12-23 19:56:12,271:INFO:Initializing plot_model()
+2024-12-23 19:56:12,271:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=42), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, system=True)
+2024-12-23 19:56:12,272:INFO:Checking exceptions
+2024-12-23 19:56:12,348:INFO:Preloading libraries
+2024-12-23 19:56:12,442:INFO:Copying training dataset
+2024-12-23 19:56:12,443:INFO:Plot type: feature
+2024-12-23 19:56:12,443:WARNING:No coef_ found. Trying feature_importances_
+2024-12-23 19:56:12,982:INFO:Visual Rendered Successfully
+2024-12-23 19:56:13,253:INFO:plot_model() successfully completed......................................
+2024-12-23 19:56:21,013:INFO:Initializing save_model()
+2024-12-23 19:56:21,013:INFO:save_model(model=ExtraTreesRegressor(n_jobs=-1, random_state=42), model_name=best_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\ahmad\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Dur', 'Gender'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-12-23 19:56:21,013:INFO:Adding model into prep_pipe
+2024-12-23 19:56:21,200:INFO:best_model.pkl saved in current working directory
+2024-12-23 19:56:21,213:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Dur', 'Gender'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=42))])
+2024-12-23 19:56:21,214:INFO:save_model() successfully completed......................................
+2024-12-23 19:57:07,063:INFO:Initializing save_model()
+2024-12-23 19:57:07,063:INFO:save_model(model=ExtraTreesRegressor(n_jobs=-1, random_state=42), model_name=best_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\ahmad\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Dur', 'Gender'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-12-23 19:57:07,064:INFO:Adding model into prep_pipe
+2024-12-23 19:57:07,224:INFO:best_model.pkl saved in current working directory
+2024-12-23 19:57:07,239:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Dur', 'Gender'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=42))])
+2024-12-23 19:57:07,240:INFO:save_model() successfully completed......................................
+2024-12-23 19:57:21,180:INFO:Initializing evaluate_model()
+2024-12-23 19:57:21,180:INFO:evaluate_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=42), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-12-23 19:57:21,206:INFO:Initializing plot_model()
+2024-12-23 19:57:21,206:INFO:plot_model(plot=pipeline, fold=KFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=42), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, system=True)
+2024-12-23 19:57:21,206:INFO:Checking exceptions
+2024-12-23 19:57:21,284:INFO:Preloading libraries
+2024-12-23 19:57:21,379:INFO:Copying training dataset
+2024-12-23 19:57:21,380:INFO:Plot type: pipeline
+2024-12-23 19:57:21,852:INFO:Visual Rendered Successfully
+2024-12-23 19:57:22,101:INFO:plot_model() successfully completed......................................
+2024-12-23 19:57:34,795:INFO:Initializing evaluate_model()
+2024-12-23 19:57:34,796:INFO:evaluate_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=42), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-12-23 19:57:34,827:INFO:Initializing plot_model()
+2024-12-23 19:57:34,827:INFO:plot_model(plot=pipeline, fold=KFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=42), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, system=True)
+2024-12-23 19:57:34,828:INFO:Checking exceptions
+2024-12-23 19:57:34,909:INFO:Preloading libraries
+2024-12-23 19:57:34,986:INFO:Copying training dataset
+2024-12-23 19:57:34,986:INFO:Plot type: pipeline
+2024-12-23 19:57:35,482:INFO:Visual Rendered Successfully
+2024-12-23 19:57:35,708:INFO:plot_model() successfully completed......................................
+2024-12-23 19:57:37,712:INFO:Initializing plot_model()
+2024-12-23 19:57:37,713:INFO:plot_model(plot=learning, fold=KFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=42), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B112D915D0>, system=True)
+2024-12-23 19:57:37,713:INFO:Checking exceptions
+2024-12-23 19:57:37,794:INFO:Preloading libraries
+2024-12-23 19:57:37,904:INFO:Copying training dataset
+2024-12-23 19:57:37,904:INFO:Plot type: learning
+2024-12-23 19:57:38,061:INFO:Fitting Model
+2024-12-23 19:58:15,850:INFO:Visual Rendered Successfully
+2024-12-23 19:58:16,064:INFO:plot_model() successfully completed......................................
