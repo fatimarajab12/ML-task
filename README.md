@@ -91,13 +91,4 @@ The model was chosen based on its performance on key evaluation metrics such as 
 
 ---
 
-## **Team Members**
-- **Fatima Rajab**
-- **Shahd Orr**
-- **Ameen Shalabi**
-
----
-
-## **Author**
-Fatima Rajab and Team  
 **Date**: December 2024
